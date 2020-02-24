@@ -22,6 +22,7 @@ final class WPV_Query_Override_Description {
 
         # plugins/wp-views/embedded/inc/wpv-filter-users-embedded.php wpv_users_query_user_filters()
         add_filter( "wpv_filter_query", [ __CLASS__, "wpv_filter_query" ], 61, 3 );
+        add_filter( "wpv_filter_taxonomy_query", [ __CLASS__, "wpv_filter_query" ], 61, 3 );
         add_filter( "wpv_filter_user_query", [ __CLASS__, "wpv_filter_query" ], 61, 3 );
 
     }
